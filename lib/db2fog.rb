@@ -94,7 +94,7 @@ class DB2Fog
 
     def run(command)
       result = system(command)
-      raise("error, process exited with status #{$?.exitstatus}") unless result
+      raise("error, process exited") unless result
     end
 
     def dump
